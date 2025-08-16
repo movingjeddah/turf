@@ -8,7 +8,7 @@ import {
   generateBreadcrumbSchema,
   generateServiceSchema,
   generateHowToSchema,
-  generateArticleSchema,
+  generateBlogPostSchema,
   generateReviewSchema
 } from '@/lib/ldjson'
 
@@ -125,7 +125,7 @@ export default function SmartSEO({
 
   // Article schema
   if (article) {
-    schemas.push(generateArticleSchema(article))
+    schemas.push(generateBlogPostSchema(article))
   }
 
   // Reviews schema

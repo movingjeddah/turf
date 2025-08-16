@@ -50,7 +50,7 @@ export default function NeighborhoodServicePage({
     { name: 'الرئيسية', url: routes.home },
     { name: 'جدة', url: routes.jeddah.index },
     { name: service.arabicTitle, url: routes.services.bySlug(service.slug) },
-    { name: neighborhood.arabicName, url: routes.jeddah.neighborhood.service(neighborhood.slug, service.slug) },
+    { name: neighborhood.arabicName, url: routes.jeddah.neighborhoodService(neighborhood.slug, service.slug) },
   ]
   
   const serviceSchema = generateServiceSchema(service)

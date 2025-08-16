@@ -185,7 +185,7 @@ export default function EnhancedAboutPage() {
                 <div key={index} className="text-center">
                   <div className="text-3xl mb-1">{achievement.icon}</div>
                   <div className="text-3xl font-bold text-primary">
-                    <AnimatedCounter targetValue={achievement.number} />
+                    <AnimatedCounter end={achievement.number} />
                     {achievement.title.includes('%') && '%'}
                     {achievement.title.includes('+') && '+'}
                   </div>
@@ -400,7 +400,7 @@ export default function EnhancedAboutPage() {
               <div key={index} className="text-center group hover-lift">
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl border border-gray-100 hover:border-primary/20 transition-all duration-300">
                   <div className="text-5xl font-bold text-primary mb-3 group-hover:scale-110 transition-transform duration-300">
-                    <AnimatedCounter targetValue={stat.number} />+
+                    <AnimatedCounter end={stat.number} />+
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{stat.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{stat.description}</p>

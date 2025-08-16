@@ -324,7 +324,7 @@ export default function EnhancedServicePage({ service }: EnhancedServicePageProp
                   </div>
                   
                   {/* Connection Line */}
-                  {index < service.process.length - 1 && (
+                  {service.process && index < service.process.length - 1 && (
                     <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary to-secondary transform -translate-y-1/2 z-10"></div>
                   )}
                 </div>

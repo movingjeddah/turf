@@ -17,7 +17,6 @@ import {
   Facebook,
   Instagram,
   Twitter,
-  Youtube,
   Settings,
   Shield,
   Award
@@ -105,7 +104,7 @@ export default function EnhancedHeader() {
   const [isTopBarVisible, setIsTopBarVisible] = useState(true)
   
   const pathname = usePathname()
-  const servicesRef = useRef<HTMLDivElement>(null)
+  const servicesRef = useRef<HTMLLIElement>(null)
   const searchRef = useRef<HTMLInputElement>(null)
 
   // تأثير الـ scroll
@@ -181,7 +180,7 @@ export default function EnhancedHeader() {
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-3 h-3" />
-                <span>{siteConfig.workingHours}</span>
+                <span>{siteConfig.openingHours}</span>
               </div>
             </div>
 
@@ -201,10 +200,7 @@ export default function EnhancedHeader() {
                    className="hover:text-secondary transition-colors">
                   <Twitter className="w-3 h-3" />
                 </a>
-                <a href={siteConfig.socialMedia.youtube} target="_blank" rel="noopener noreferrer"
-                   className="hover:text-secondary transition-colors">
-                  <Youtube className="w-3 h-3" />
-                </a>
+
               </div>
             </div>
 
@@ -517,7 +513,7 @@ export default function EnhancedHeader() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-primary" />
-                  <span>{siteConfig.workingHours}</span>
+                  <span>{siteConfig.openingHours}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Shield className="w-4 h-4 text-primary" />
@@ -541,10 +537,7 @@ export default function EnhancedHeader() {
                      className="p-2 bg-sky-50 text-sky-600 rounded-lg hover:bg-sky-100 transition-colors">
                     <Twitter className="w-5 h-5" />
                   </a>
-                  <a href={siteConfig.socialMedia.youtube} target="_blank" rel="noopener noreferrer"
-                     className="p-2 bg-red-50 text-red-600 rounded-lg hover:bg-red-100 transition-colors">
-                    <Youtube className="w-5 h-5" />
-                  </a>
+
                 </div>
               </div>
             </div>
