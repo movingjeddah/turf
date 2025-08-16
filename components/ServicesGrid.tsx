@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useIntersectionObserver } from '@/hooks/usePerformance'
+import { useState } from 'react'
 import { ArrowLeft } from 'lucide-react'
 import { services } from '@/content/services'
 import { routes } from '@/lib/routes'
