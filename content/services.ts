@@ -339,13 +339,13 @@ export const services: Service[] = [
     ],
     gallery: [
       {
-        image: '/images/natural-grass.webp',
-        caption: 'ثيل طبيعي أخضر كثيف',
+        image: '/images/natural-grass-turf-natural.webp',
+        caption: 'ثيل طبيعي أخضر كثيف عالي الجودة',
         beforeAfter: false,
       },
       {
-        image: '/images/natural-grass-turf.webp',
-        caption: 'ملعب بثيل طبيعي احترافي',
+        image: '/images/turf_jeddah_services.webp',
+        caption: 'خدمات النجيل الطبيعي في جدة',
         beforeAfter: false,
       },
       {
