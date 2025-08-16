@@ -1,0 +1,11 @@
+/* TEAM */
+Company: شركة تنسيق حدائق جدة
+Location: Jeddah, Saudi Arabia
+
+/* THANKS */
+Frameworks: Next.js, React, Tailwind CSS
+
+/* SITE */
+Last update: 2024
+Language: Arabic
+Standards: HTML5, CSS3, JavaScript ES6+ 

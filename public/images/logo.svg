@@ -1,0 +1,74 @@
+
+    <svg width="200" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+      <defs>
+        <!-- تدرج لوني أخضر -->
+        <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+          <stop offset="50%" style="stop-color:#16a34a;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- تدرج لوني ذهبي -->
+        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+          <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- ظل للنص -->
+        <filter id="textShadow">
+          <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.3"/>
+        </filter>
+      </defs>
+      
+      <!-- خلفية دائرية للشعار المربع -->
+      
+      
+      <!-- رمز النخلة والأوراق -->
+      <g transform="translate(20, 15)">
+        <!-- جذع النخلة -->
+        <rect x="20" y="25" width="8" height="25" fill="#8b4513" rx="2"/>
+        
+        <!-- أوراق النخلة -->
+        <path d="M24 25 Q15 15 8 20 Q15 10 24 15" fill="url(#greenGradient)"/>
+        <path d="M24 25 Q33 15 40 20 Q33 10 24 15" fill="url(#greenGradient)"/>
+        <path d="M24 20 Q18 8 12 12 Q20 5 26 12" fill="url(#greenGradient)"/>
+        <path d="M24 20 Q30 8 36 12 Q28 5 22 12" fill="url(#greenGradient)"/>
+        
+        <!-- أوراق جانبية صغيرة -->
+        <ellipse cx="10" cy="30" rx="8" ry="4" fill="url(#greenGradient)" opacity="0.8"/>
+        <ellipse cx="38" cy="30" rx="8" ry="4" fill="url(#greenGradient)" opacity="0.8"/>
+        
+        <!-- نقاط ضوء على الأوراق -->
+        <circle cx="18" cy="18" r="1.5" fill="#ffffff" opacity="0.7"/>
+        <circle cx="30" cy="18" r="1.5" fill="#ffffff" opacity="0.7"/>
+        <circle cx="24" cy="12" r="1" fill="#ffffff" opacity="0.8"/>
+      </g>
+      
+      <!-- النص العربي -->
+      
+      <text x="80" y="35" 
+            font-family="Arial, sans-serif" 
+            font-size="18" 
+            font-weight="bold" 
+            text-anchor="start" 
+            fill="url(#greenGradient)"
+            filter="url(#textShadow)">تنسيق حدائق جدة</text>
+      
+      <text x="80" y="55" 
+            font-family="Arial, sans-serif" 
+            font-size="12" 
+            text-anchor="start" 
+            fill="url(#goldGradient)">Jeddah Gardens</text>
+      
+      
+      <!-- عناصر زخرفية -->
+      <g opacity="0.3">
+        
+        <circle cx="170" cy="20" r="2" fill="url(#goldGradient)"/>
+        <circle cx="180" cy="30" r="1.5" fill="url(#greenGradient)"/>
+        <circle cx="160" cy="35" r="1" fill="url(#goldGradient)"/>
+        
+      </g>
+    </svg>
+    

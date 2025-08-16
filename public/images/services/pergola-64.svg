@@ -1,0 +1,31 @@
+
+    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <defs>
+        <linearGradient id="bg-pergola" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.1" />
+          <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.05" />
+        </linearGradient>
+        <filter id="shadow-pergola">
+          <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.1"/>
+        </filter>
+      </defs>
+      
+      <!-- خلفية دائرية -->
+      <circle cx="32" cy="32" r="28" fill="url(#bg-pergola)" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow-pergola)"/>
+      
+      <!-- الأيقونة -->
+      
+      <g transform="translate(16, 16)">
+        <!-- أعمدة البرجولة -->
+        <rect x="6" y="12" width="3" height="20" fill="#8b4513"/>
+        <rect x="23" y="12" width="3" height="20" fill="#8b4513"/>
+        <!-- العارضة العلوية -->
+        <rect x="4" y="8" width="24" height="4" fill="#d2691e" rx="2"/>
+        <!-- الظل -->
+        <rect x="6" y="12" width="20" height="2" fill="#8b5cf6" opacity="0.3"/>
+        <rect x="6" y="16" width="20" height="2" fill="#8b5cf6" opacity="0.3"/>
+        <rect x="6" y="20" width="20" height="2" fill="#8b5cf6" opacity="0.3"/>
+      </g>
+    
+    </svg>
+  

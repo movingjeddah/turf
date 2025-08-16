@@ -1,0 +1,30 @@
+
+    <svg width="128" height="128" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+      <defs>
+        <linearGradient id="bg-artificial-grass" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#16a34a;stop-opacity:0.1" />
+          <stop offset="100%" style="stop-color:#16a34a;stop-opacity:0.05" />
+        </linearGradient>
+        <filter id="shadow-artificial-grass">
+          <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.1"/>
+        </filter>
+      </defs>
+      
+      <!-- خلفية دائرية -->
+      <circle cx="64" cy="64" r="60" fill="url(#bg-artificial-grass)" stroke="#16a34a" stroke-width="2" filter="url(#shadow-artificial-grass)"/>
+      
+      <!-- الأيقونة -->
+      
+      <g transform="translate(48, 48)">
+        <!-- شفرات العشب -->
+        <path d="M8 32 Q8 24 6 16 Q8 20 10 16 Q8 24 8 32" fill="#16a34a"/>
+        <path d="M12 32 Q12 22 10 14 Q12 18 14 14 Q12 22 12 32" fill="#16a34a"/>
+        <path d="M16 32 Q16 20 14 12 Q16 16 18 12 Q16 20 16 32" fill="#16a34a"/>
+        <path d="M20 32 Q20 24 18 16 Q20 20 22 16 Q20 24 20 32" fill="#16a34a"/>
+        <path d="M24 32 Q24 22 22 14 Q24 18 26 14 Q24 22 24 32" fill="#16a34a"/>
+        <!-- أرضية -->
+        <rect x="4" y="30" width="24" height="4" fill="#8b4513" rx="2"/>
+      </g>
+    
+    </svg>
+  

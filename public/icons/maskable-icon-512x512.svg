@@ -1,0 +1,14 @@
+
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#36bf36"/>
+  <circle cx="256" cy="256" r="200" fill="white" opacity="0.1"/>
+  <g transform="translate(256, 256)">
+    <path d="M 0,-140 Q -80,-80 -140,0 Q -80,80 0,140 Q 80,80 140,0 Q 80,-80 0,-140" 
+          fill="white" 
+          opacity="0.9"/>
+    <line x1="0" y1="140" x2="0" y2="40" 
+          stroke="white" 
+          stroke-width="8" 
+          opacity="0.9"/>
+  </g>
+</svg>

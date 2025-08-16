@@ -1,0 +1,33 @@
+
+    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <defs>
+        <linearGradient id="bg-lighting" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#eab308;stop-opacity:0.1" />
+          <stop offset="100%" style="stop-color:#eab308;stop-opacity:0.05" />
+        </linearGradient>
+        <filter id="shadow-lighting">
+          <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.1"/>
+        </filter>
+      </defs>
+      
+      <!-- خلفية دائرية -->
+      <circle cx="32" cy="32" r="28" fill="url(#bg-lighting)" stroke="#eab308" stroke-width="2" filter="url(#shadow-lighting)"/>
+      
+      <!-- الأيقونة -->
+      
+      <g transform="translate(16, 16)">
+        <!-- عمود الإضاءة -->
+        <rect x="14" y="20" width="4" height="12" fill="#666" rx="1"/>
+        <!-- المصباح -->
+        <ellipse cx="16" cy="16" rx="8" ry="6" fill="#eab308" opacity="0.8"/>
+        <ellipse cx="16" cy="14" rx="6" ry="4" fill="#eab308"/>
+        <!-- أشعة الضوء -->
+        <path d="M16 8 L14 4 L18 4 Z" fill="#eab308" opacity="0.6"/>
+        <path d="M24 12 L28 10 L28 14 Z" fill="#eab308" opacity="0.6"/>
+        <path d="M8 12 L4 10 L4 14 Z" fill="#eab308" opacity="0.6"/>
+        <path d="M22 20 L26 22 L24 26 Z" fill="#eab308" opacity="0.6"/>
+        <path d="M10 20 L6 22 L8 26 Z" fill="#eab308" opacity="0.6"/>
+      </g>
+    
+    </svg>
+  

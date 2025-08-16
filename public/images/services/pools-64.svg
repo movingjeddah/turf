@@ -1,0 +1,30 @@
+
+    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <defs>
+        <linearGradient id="bg-pools" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.1" />
+          <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.05" />
+        </linearGradient>
+        <filter id="shadow-pools">
+          <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.1"/>
+        </filter>
+      </defs>
+      
+      <!-- خلفية دائرية -->
+      <circle cx="32" cy="32" r="28" fill="url(#bg-pools)" stroke="#06b6d4" stroke-width="2" filter="url(#shadow-pools)"/>
+      
+      <!-- الأيقونة -->
+      
+      <g transform="translate(16, 16)">
+        <!-- حوض السباحة -->
+        <ellipse cx="16" cy="20" rx="14" ry="8" fill="#06b6d4" opacity="0.8"/>
+        <ellipse cx="16" cy="18" rx="12" ry="6" fill="#06b6d4"/>
+        <!-- موجات الماء -->
+        <path d="M4 18 Q8 16 12 18 Q16 20 20 18 Q24 16 28 18" stroke="white" stroke-width="1" fill="none" opacity="0.6"/>
+        <path d="M6 20 Q10 18 14 20 Q18 22 22 20 Q26 18 30 20" stroke="white" stroke-width="1" fill="none" opacity="0.4"/>
+        <!-- درج الحوض -->
+        <rect x="12" y="26" width="8" height="3" fill="#ccc" rx="1"/>
+      </g>
+    
+    </svg>
+  

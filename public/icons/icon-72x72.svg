@@ -1,0 +1,21 @@
+
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="#36bf36"/>
+  <g transform="translate(36, 36)">
+    <path d="M 0,-25.2 Q -14.4,-14.4 -25.2,0 Q -14.4,14.4 0,25.2 Q 14.4,14.4 25.2,0 Q 14.4,-14.4 0,-25.2" 
+          fill="white" 
+          opacity="0.9"/>
+    <line x1="0" y1="25.2" x2="0" y2="7.2" 
+          stroke="white" 
+          stroke-width="1.44" 
+          opacity="0.9"/>
+  </g>
+  <text x="36" y="61.199999999999996" 
+        font-family="Arial, sans-serif" 
+        font-size="10.799999999999999" 
+        font-weight="bold" 
+        fill="white" 
+        text-anchor="middle">
+    حدائق
+  </text>
+</svg>

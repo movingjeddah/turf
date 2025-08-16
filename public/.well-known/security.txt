@@ -1,0 +1,8 @@
+Contact: mailto:security@jeddahgardens.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: ar, en
+Canonical: https://jeddahgardens.com/.well-known/security.txt
+Policy: https://jeddahgardens.com/security-policy
+Acknowledgments: https://jeddahgardens.com/security-thanks
+Encryption: https://jeddahgardens.com/pgp-key.txt
+Hiring: https://jeddahgardens.com/careers

@@ -1,0 +1,36 @@
+
+    <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+      <defs>
+        <linearGradient id="bg-irrigation" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.1" />
+          <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.05" />
+        </linearGradient>
+        <filter id="shadow-irrigation">
+          <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.1"/>
+        </filter>
+      </defs>
+      
+      <!-- خلفية دائرية -->
+      <circle cx="48" cy="48" r="44" fill="url(#bg-irrigation)" stroke="#3b82f6" stroke-width="2" filter="url(#shadow-irrigation)"/>
+      
+      <!-- الأيقونة -->
+      
+      <g transform="translate(32, 32)">
+        <!-- أنبوب الري -->
+        <rect x="4" y="14" width="24" height="4" fill="#666" rx="2"/>
+        <!-- فتحات المياه -->
+        <circle cx="8" cy="16" r="1.5" fill="#3b82f6"/>
+        <circle cx="16" cy="16" r="1.5" fill="#3b82f6"/>
+        <circle cx="24" cy="16" r="1.5" fill="#3b82f6"/>
+        <!-- رذاذ الماء -->
+        <path d="M8 16 L6 10 L8 8 L10 10 Z" fill="#3b82f6" opacity="0.6"/>
+        <path d="M16 16 L14 10 L16 8 L18 10 Z" fill="#3b82f6" opacity="0.6"/>
+        <path d="M24 16 L22 10 L24 8 L26 10 Z" fill="#3b82f6" opacity="0.6"/>
+        <!-- قطرات -->
+        <circle cx="6" cy="12" r="0.5" fill="#3b82f6" opacity="0.4"/>
+        <circle cx="14" cy="12" r="0.5" fill="#3b82f6" opacity="0.4"/>
+        <circle cx="22" cy="12" r="0.5" fill="#3b82f6" opacity="0.4"/>
+      </g>
+    
+    </svg>
+  
