@@ -1,11 +1,42 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { useIntersectionObserver } from '@/hooks/usePerformance'
-import { useState } from 'react'
-import { ArrowLeft } from 'lucide-react'
+import { 
+  ArrowLeft, 
+  Trees, 
+  Mountain, 
+  Waves, 
+  Droplets, 
+  Wrench, 
+  Lightbulb, 
+  Home, 
+  Circle,
+  Leaf,
+  Shield
+} from 'lucide-react'
 import { services } from '@/content/services'
 import { routes } from '@/lib/routes'
-import { serviceIcons } from '@/lib/service-icons'
+
+// أيقونات احترافية لكل خدمة
+const getServiceIcon = (serviceKey: string) => {
+  const iconMap = {
+    'landscaping': { icon: Trees, color: 'text-green-600', bg: 'bg-green-50' },
+    'artificial-grass': { icon: Mountain, color: 'text-emerald-600', bg: 'bg-emerald-50' },
+    'green-wall': { icon: Leaf, color: 'text-lime-600', bg: 'bg-lime-50' },
+    'natural-turf': { icon: Shield, color: 'text-green-700', bg: 'bg-green-100' },
+    'pergolas-shades': { icon: Home, color: 'text-purple-600', bg: 'bg-purple-50' },
+    'water-features': { icon: Waves, color: 'text-blue-600', bg: 'bg-blue-50' },
+    'irrigation': { icon: Droplets, color: 'text-cyan-600', bg: 'bg-cyan-50' },
+    'maintenance': { icon: Wrench, color: 'text-orange-600', bg: 'bg-orange-50' },
+    'lighting': { icon: Lightbulb, color: 'text-yellow-600', bg: 'bg-yellow-50' },
+    'pools': { icon: Circle, color: 'text-teal-600', bg: 'bg-teal-50' }
+  }
+  
+  return iconMap[serviceKey as keyof typeof iconMap] || { 
+    icon: Trees, 
+    color: 'text-gray-600', 
+    bg: 'bg-gray-50' 
+  }
+}
 
 export default function ServicesGrid() {
   return (
@@ -37,16 +68,16 @@ export default function ServicesGrid() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 
                 {/* أيقونة الخدمة الاحترافية */}
-                <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  {serviceIcons[service.key as keyof typeof serviceIcons] && (
-                    <Image 
-                      src={serviceIcons[service.key as keyof typeof serviceIcons].svg(48)}
-                      alt={`أيقونة ${service.arabicTitle}`}
-                      className="w-8 h-8"
-                      width={32}
-                      height={32}
-                    />
-                  )}
+                <div className={`absolute top-4 right-4 w-14 h-14 ${getServiceIcon(service.key).bg} backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-xl border border-white/50 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                  {(() => {
+                    const IconComponent = getServiceIcon(service.key).icon
+                    return (
+                      <IconComponent 
+                        className={`w-8 h-8 ${getServiceIcon(service.key).color} group-hover:scale-110 transition-transform duration-300`}
+                        strokeWidth={2.5}
+                      />
+                    )
+                  })()}
                 </div>
               </div>
               
