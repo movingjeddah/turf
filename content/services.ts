@@ -349,8 +349,8 @@ export const services: Service[] = [
         beforeAfter: false,
       },
       {
-        image: '/images/turf-grass.webp',
-        caption: 'حديقة منزلية بثيل طبيعي',
+        image: '/images/small-arizona-backyard-with-lawn-planters-and-custom-pergola-by-straight-line-landscape.webp',
+        caption: 'حديقة منزلية متكاملة مع نجيل طبيعي ونباتات متنوعة',
         beforeAfter: false,
       },
     ],
