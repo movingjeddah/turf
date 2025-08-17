@@ -86,9 +86,9 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'سنوات خبرة', value: '15+' }
         ],
         gallery: [
-          '/images/luxury-villa-landscaping.webp',
-          '/images/landscape-design-build.webp',
           '/images/outdoor-wall-fountains-that-add-luxury-to-your-landscaping.webp',
+          '/images/landscape-design-build.webp',
+          '/images/before-after-outdoor.webp',
           '/images/small-arizona-backyard-with-lawn-planters-and-custom-pergola-by-straight-line-landscape.webp'
         ]
       },
@@ -106,7 +106,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'فرق العمل', value: '5' }
         ],
         gallery: [
-          '/images/residential-landscaping.webp',
+          '/images/landscape-design-build.webp',
           '/images/landscape-design-build-1.webp',
           '/images/green-wall-and-landscape.webp',
           '/images/shade-planting-scheme-garden-plan-under-shade-tree-tree-base-landscape-yard-and-curb-appeal.webp'
@@ -126,9 +126,9 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'سنوات خبرة', value: '12+' }
         ],
         gallery: [
-          '/images/peaceful-garden-design.webp',
-          '/images/residential-landscaping.webp',
+          '/images/beautiful-pergola-ideas-to-finally-upgrade-your-yard-grow-your-yard.webp',
           '/images/landscape-design-build.webp',
+          '/images/landscape-design-build-1.webp',
           '/images/shade-planting-scheme-garden-plan-under-shade-tree-tree-base-landscape-yard-and-curb-appeal.webp'
         ]
       },
@@ -146,7 +146,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'رضا العملاء', value: '96%' }
         ],
         gallery: [
-          '/images/modern-landscaping.webp',
+          '/images/turf-grass.webp',
           '/images/landscape-design-build-1.webp',
           '/images/artificial-grass-range.webp',
           '/images/green-wall-and-landscape.webp'
@@ -166,10 +166,10 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'ضمان الأمان', value: '5 سنوات' }
         ],
         gallery: [
-          '/images/family-garden-safe.webp',
-          '/images/residential-landscaping.webp',
+          '/images/artificial-grass-range.webp',
           '/images/landscape-design-build.webp',
-          '/images/artificial-grass-range.webp'
+          '/images/turf-before-after.webp',
+          '/images/hego-miracle-artificial-grass-range.webp'
         ]
       },
       'an-naeem': {
@@ -186,7 +186,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'رضا العملاء', value: '99%' }
         ],
         gallery: [
-          '/images/spacious-landscape.webp',
+          '/images/unique-concrete-backyard-ideas-for-a-creative-outdoor-space.webp',
           '/images/landscape-design-build-1.webp',
           '/images/outdoor-wall-fountains-that-add-luxury-to-your-landscaping.webp',
           '/images/small-arizona-backyard-with-lawn-planters-and-custom-pergola-by-straight-line-landscape.webp'
@@ -206,7 +206,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'جوائز تصميم', value: '15+' }
         ],
         gallery: [
-          '/images/luxury-modern-landscaping.webp',
+          '/images/before-after-outdoor.webp',
           '/images/outdoor-wall-fountains-that-add-luxury-to-your-landscaping.webp',
           '/images/landscape-design-build.webp',
           '/images/small-arizona-backyard-with-lawn-planters-and-custom-pergola-by-straight-line-landscape.webp'
@@ -226,9 +226,9 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'حفظ التراث', value: '30 عام' }
         ],
         gallery: [
-          '/images/green-gardens-landscape.webp',
-          '/images/shade-planting-scheme-garden-plan-under-shade-tree-tree-base-landscape-yard-and-curb-appeal.webp',
           '/images/green-wall-and-landscape.webp',
+          '/images/shade-planting-scheme-garden-plan-under-shade-tree-tree-base-landscape-yard-and-curb-appeal.webp',
+          '/images/green-wall-variations.webp',
           '/images/landscape-design-build-1.webp'
         ]
       },
@@ -246,7 +246,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'عملاء تجاريين', value: '95%' }
         ],
         gallery: [
-          '/images/commercial-landscaping.webp',
+          '/images/before-after.webp',
           '/images/artificial-grass-range.webp',
           '/images/landscape-design-build.webp',
           '/images/green-wall-and-landscape.webp'
@@ -266,8 +266,8 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'خبرة ساحلية', value: '20 عام' }
         ],
         gallery: [
-          '/images/coastal-landscaping.webp',
           '/images/water-features.webp',
+          '/images/water-features-jeddah.webp',
           '/images/landscape-design-build.webp',
           '/images/natural-grass.webp'
         ]
@@ -286,7 +286,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'استدامة', value: '98%' }
         ],
         gallery: [
-          '/images/modern-villa-landscape.webp',
+          '/images/edging-ideas-that-will-edge-out-boredom.webp',
           '/images/artificial-grass-range.webp',
           '/images/landscape-design-build-1.webp',
           '/images/green-wall.webp'
@@ -306,10 +306,10 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           { label: 'رضا العائلات', value: '99%' }
         ],
         gallery: [
-          '/images/family-peaceful-garden.webp',
-          '/images/residential-landscaping.webp',
+          '/images/a-water-feature-transforms-a-family-backyard-layout.webp',
+          '/images/landscape-design-build.webp',
           '/images/shade-planting-scheme-garden-plan-under-shade-tree-tree-base-landscape-yard-and-curb-appeal.webp',
-          '/images/landscape-design-build.webp'
+          '/images/pergola-design.webp'
         ]
       },
       'al-safa': {
@@ -490,8 +490,8 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
       gallery: [
         '/images/landscape-design-build.webp',
         '/images/green-wall-and-landscape.webp',
-        '/images/peaceful-garden-design.webp',
-        '/images/residential-landscaping.webp'
+        '/images/beautiful-pergola-ideas-to-finally-upgrade-your-yard-grow-your-yard.webp',
+        '/images/turf-grass.webp'
       ]
     }
   }
