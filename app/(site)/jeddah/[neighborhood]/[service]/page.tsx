@@ -4,6 +4,7 @@ import PriceTable from '@/components/PriceTable'
 import CTA from '@/components/CTA'
 import FAQ from '@/components/FAQ'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import NeighborhoodCostCalculator from '@/components/NeighborhoodCostCalculator'
 import { services } from '@/content/services'
 import { neighborhoods } from '@/content/neighborhoods'
 import { routes } from '@/lib/routes'
@@ -124,6 +125,12 @@ export default function NeighborhoodServicePage({
             أسعار {service.arabicTitle} في {neighborhood.arabicName}
           </h2>
           <PriceTable tiers={service.pricingTiers} />
+          
+          <NeighborhoodCostCalculator 
+            service={service} 
+            neighborhoodName={neighborhood.arabicName} 
+          />
+          
           <div className="text-center mt-8">
             <p className="text-gray-600 mb-4">
               * أسعار خاصة لسكان {neighborhood.arabicName}
