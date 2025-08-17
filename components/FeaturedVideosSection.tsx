@@ -34,10 +34,19 @@ export default function FeaturedVideosSection() {
                   muted
                   loop
                   preload="metadata"
+                  playsInline
                   onMouseEnter={(e) => e.currentTarget.play()}
                   onMouseLeave={(e) => {
                     e.currentTarget.pause()
                     e.currentTarget.currentTime = 0
+                  }}
+                  onTouchStart={(e) => e.currentTarget.play()}
+                  onClick={(e) => {
+                    if (e.currentTarget.paused) {
+                      e.currentTarget.play()
+                    } else {
+                      e.currentTarget.pause()
+                    }
                   }}
                 >
                   <source src={getVideoPath(featuredVideos[0].fileName)} type="video/mp4" />
@@ -49,7 +58,7 @@ export default function FeaturedVideosSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button
                     onClick={() => handleVideoPlay(featuredVideos[0].id)}
-                    className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300"
+                    className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-transform duration-300 touch-manipulation"
                   >
                     <Play className="w-10 h-10 text-primary mr-1" />
                   </button>
@@ -89,7 +98,7 @@ export default function FeaturedVideosSection() {
             {featuredVideos.slice(1, 3).map((video) => (
               <div
                 key={video.id}
-                className="flex gap-4 group cursor-pointer hover:bg-white p-4 rounded-xl transition-colors duration-300"
+                className="flex gap-4 group cursor-pointer hover:bg-white active:bg-gray-50 p-4 rounded-xl transition-colors duration-300 touch-manipulation"
                 onClick={() => handleVideoPlay(video.id)}
               >
                 <div className="relative w-32 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-secondary/20">
@@ -97,6 +106,12 @@ export default function FeaturedVideosSection() {
                     className="w-full h-full object-cover"
                     muted
                     preload="metadata"
+                    playsInline
+                    onTouchStart={(e) => e.currentTarget.play()}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      handleVideoPlay(video.id)
+                    }}
                   >
                     <source src={getVideoPath(video.fileName)} type="video/mp4" />
                   </video>
@@ -104,7 +119,7 @@ export default function FeaturedVideosSection() {
                   <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
                   
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:scale-110 active:scale-95 transition-transform duration-300">
                       <Play className="w-4 h-4 text-primary mr-0.5" />
                     </div>
                   </div>
@@ -173,24 +188,31 @@ export default function FeaturedVideosSection() {
 
         {/* عارض الفيديو المنبثق */}
         {selectedVideo && (
-          <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-            <div className="relative w-full max-w-4xl">
+          <div 
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedVideo(null)}
+          >
+            <div className="relative w-full max-w-4xl" onClick={(e) => e.stopPropagation()}>
               <button
                 onClick={() => setSelectedVideo(null)}
-                className="absolute -top-12 right-0 text-white text-xl hover:text-gray-300 transition-colors"
+                className="absolute -top-8 md:-top-12 right-0 text-white text-xl hover:text-gray-300 active:text-gray-400 transition-colors touch-manipulation bg-black/50 rounded-full w-8 h-8 md:w-auto md:h-auto md:bg-transparent flex items-center justify-center"
               >
-                ✕ إغلاق
+                ✕ <span className="hidden md:inline mr-2">إغلاق</span>
               </button>
               
               <video
                 className="w-full aspect-video rounded-lg"
                 controls
                 autoPlay
+                playsInline
+                controlsList="nodownload"
+                onContextMenu={(e) => e.preventDefault()}
               >
                 <source 
                   src={getVideoPath(featuredVideos.find(v => v.id === selectedVideo)?.fileName || '')} 
                   type="video/mp4" 
                 />
+                المتصفح الخاص بك لا يدعم تشغيل الفيديو.
               </video>
             </div>
           </div>

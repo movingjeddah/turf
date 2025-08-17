@@ -98,10 +98,19 @@ export default function PortfolioShowcase() {
                   muted
                   loop
                   preload="metadata"
+                  playsInline
                   onMouseEnter={(e) => e.currentTarget.play()}
                   onMouseLeave={(e) => {
                     e.currentTarget.pause()
                     e.currentTarget.currentTime = 0
+                  }}
+                  onTouchStart={(e) => e.currentTarget.play()}
+                  onClick={(e) => {
+                    if (e.currentTarget.paused) {
+                      e.currentTarget.play()
+                    } else {
+                      e.currentTarget.pause()
+                    }
                   }}
                 >
                   <source src={getVideoPath(item.videoFileName)} type="video/mp4" />
@@ -115,7 +124,7 @@ export default function PortfolioShowcase() {
                 </div>
 
                 {/* زر تشغيل الفيديو */}
-                <div className="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                   <Play className="w-4 h-4 text-primary mr-0.5" />
                 </div>
 
