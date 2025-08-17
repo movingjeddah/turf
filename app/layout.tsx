@@ -7,14 +7,15 @@ import { siteConfig } from '@/content/site'
 import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/ldjson'
 import PWAPrompt from '@/components/PWAPrompt'
 import FloatingActionButtons from '@/components/FloatingActionButtons'
-import OptimizedFonts from '@/components/OptimizedFonts'
 
 const notoNaskhArabic = Noto_Naskh_Arabic({
   weight: ['400', '500', '600', '700'],
-  subsets: ['arabic'],
+  subsets: ['arabic', 'latin'],
   display: 'swap',
   preload: true,
   variable: '--font-arabic',
+  fallback: ['system-ui', 'arial', 'sans-serif'],
+  adjustFontFallback: true,
 })
 
 export const metadata: Metadata = {
@@ -166,7 +167,6 @@ export default function RootLayout({
         />
       </head>
       <body className={`${notoNaskhArabic.className} antialiased critical-css`}>
-        <OptimizedFonts />
         {children}
         <PWAPrompt />
         <FloatingActionButtons />
