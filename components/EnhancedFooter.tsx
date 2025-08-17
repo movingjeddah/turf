@@ -81,7 +81,7 @@ export default function EnhancedFooter() {
                   alt="شعار تنسيق حدائق جدة" 
                   width={200}
                   height={80}
-                  className="h-16 w-auto mb-4"
+                  className="h-16 md:h-20 lg:h-24 w-auto mb-4"
                 />
                 <p className="text-gray-300 leading-relaxed mb-6">
                   الشركة الرائدة في تنسيق الحدائق والعشب الصناعي في جدة والمنطقة الغربية. 

@@ -29,7 +29,7 @@ export default function Header() {
             <Image 
               src="/images/logo.png" 
               alt="شعار تنسيق حدائق جدة" 
-              className="h-12 w-auto hover:scale-105 transition-transform duration-200"
+              className="h-12 md:h-14 lg:h-16 w-auto hover:scale-105 transition-transform duration-200"
               width={200}
               height={80}
               priority
