@@ -2,13 +2,25 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
 import { routes } from '@/lib/routes'
 import { siteConfig } from '@/content/site'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  // تأثير الـ scroll للشفافية
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY
+      setIsScrolled(scrollPosition > 20)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const navItems = [
     { href: routes.home, label: 'الرئيسية' },
@@ -21,7 +33,11 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className={`sticky top-0 z-50 transition-all duration-500 ${
+      isScrolled 
+        ? 'bg-white/70 backdrop-blur-lg shadow-2xl border-b border-white/20' 
+        : 'bg-white shadow-md'
+    }`}>
       <div className="container">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

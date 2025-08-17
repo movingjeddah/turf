@@ -214,9 +214,9 @@ export default function EnhancedHeader() {
       </div>
 
       {/* القائمة الرئيسية */}
-      <header className={`sticky top-0 z-50 transition-all duration-300 ${
+      <header className={`sticky top-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100' 
+          ? 'bg-white/70 backdrop-blur-lg shadow-2xl border-b border-white/20' 
           : 'bg-white shadow-md'
       }`}>
         <div className="container">
