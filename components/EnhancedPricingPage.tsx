@@ -21,6 +21,7 @@ import {
   Zap
 } from 'lucide-react'
 import { services } from '@/content/services'
+import { siteConfig } from '@/content/site'
 import { routes } from '@/lib/routes'
 import PriceTable from '@/components/PriceTable'
 import { getVideoPath } from '@/lib/videos'
@@ -565,14 +566,14 @@ export default function EnhancedPricingPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href={`tel:${'+966501234567'}`}
+                    href={`tel:${siteConfig.phone}`}
                     className="inline-flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                   >
                     <Phone className="w-5 h-5" />
                     اتصل للحصول على عرض
                   </a>
                   <a
-                    href={`https://wa.me/966501234567?text=مرحباً، أرغب في الحصول على عرض سعر مخصص`}
+                    href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=مرحباً، أرغب في الحصول على عرض سعر مخصص`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"

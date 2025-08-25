@@ -225,8 +225,8 @@ export default function EnhancedContactPage() {
                       <a href={`tel:${siteConfig.phone}`} className="text-gray-600 hover:text-primary ltr-numbers block">
                         {siteConfig.phone} (الرئيسي)
                       </a>
-                      <a href={`tel:+966505123456`} className="text-gray-600 hover:text-primary ltr-numbers block text-sm">
-                        +966 50 512 3456 (الطوارئ)
+                      <a href={`tel:${siteConfig.phone}`} className="text-gray-600 hover:text-primary ltr-numbers block text-sm">
+                        {siteConfig.phone} (الطوارئ)
                       </a>
                     </div>
                   </div>
@@ -240,8 +240,8 @@ export default function EnhancedContactPage() {
                       <a href={`mailto:${siteConfig.email}`} className="text-gray-600 hover:text-primary block">
                         {siteConfig.email}
                       </a>
-                      <a href="mailto:support@example.com" className="text-gray-600 hover:text-primary block text-sm">
-                        support@example.com (الدعم)
+                      <a href={`mailto:support@${siteConfig.email.split('@')[1]}`} className="text-gray-600 hover:text-primary block text-sm">
+                        support@{siteConfig.email.split('@')[1]} (الدعم)
                       </a>
                     </div>
                   </div>

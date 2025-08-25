@@ -5,7 +5,7 @@ Disallow: /api/
 Disallow: /thank-you
 
 # Host
-Host: https://example.com
+Host: https://turfksa.com
 
 # Sitemaps
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://turfksa.com/sitemap.xml

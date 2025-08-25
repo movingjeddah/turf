@@ -51,7 +51,7 @@ async function createMobileScreenshot() {
       <!-- Contact Section -->
       <rect x="0" y="450" width="${width}" height="100" fill="#36bf36"/>
       <text x="20" y="480" font-family="Arial" font-size="18" font-weight="bold" fill="white">اتصل بنا الآن</text>
-      <text x="20" y="505" font-family="Arial" font-size="14" fill="white">+966 50 123 4567</text>
+      <text x="20" y="505" font-family="Arial" font-size="14" fill="white">+966 54 892 3300</text>
       <rect x="20" y="520" width="120" height="30" rx="15" fill="white"/>
       <text x="35" y="540" font-family="Arial" font-size="12" fill="#36bf36">واتساب مباشر</text>
       
@@ -156,7 +156,7 @@ async function createDesktopScreenshot() {
       <!-- Contact Bar -->
       <rect x="0" y="980" width="${width}" height="100" fill="#36bf36"/>
       <text x="100" y="1020" font-family="Arial" font-size="24" font-weight="bold" fill="white">جاهزون لتحويل حديقتك؟ اتصل بنا الآن!</text>
-      <text x="100" y="1050" font-family="Arial" font-size="16" fill="white">+966 50 123 4567  |  info@jeddahgardens.com</text>
+      <text x="100" y="1050" font-family="Arial" font-size="16" fill="white">+966 54 892 3300  |  info@turfksa.com</text>
       <rect x="800" y="1000" width="180" height="40" rx="20" fill="white"/>
       <text x="830" y="1025" font-family="Arial" font-size="14" font-weight="bold" fill="#36bf36">واتساب مباشر</text>
     </svg>

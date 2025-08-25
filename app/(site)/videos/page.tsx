@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import VideoGallery from '@/components/VideoGallery'
 import { videos } from '@/lib/videos'
+import { siteConfig } from '@/content/site'
 
 export const metadata: Metadata = {
   title: 'معرض الفيديوهات - تنسيق حدائق جدة',
@@ -108,13 +109,13 @@ export default function VideosPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+966501234567"
+              href={`tel:${siteConfig.phone}`}
               className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               اتصل بنا الآن
             </a>
             <a
-              href="https://wa.me/966501234567?text=مرحباً، شاهدت فيديوهاتكم وأرغب في الاستفسار"
+              href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=مرحباً، شاهدت فيديوهاتكم وأرغب في الاستفسار`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors"

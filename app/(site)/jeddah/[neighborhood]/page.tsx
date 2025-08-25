@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { neighborhoods } from '@/content/neighborhoods'
 import { services } from '@/content/services'
+import { siteConfig } from '@/content/site'
 import { routes } from '@/lib/routes'
 import { generateMetaTags } from '@/lib/seo'
 import { generateLocalBusinessSchema, generateBreadcrumbSchema } from '@/lib/ldjson'
@@ -503,7 +504,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
     name: `تنسيق حدائق ${neighborhood.arabicName}`,
     description: `خدمات تنسيق الحدائق والمناظر الطبيعية في ${neighborhood.arabicName}، جدة`,
     address: `${neighborhood.arabicName}، جدة، المملكة العربية السعودية`,
-    telephone: '+966-12-234-5678',
+    telephone: siteConfig.phone,
     url: routes.jeddah.neighborhood(neighborhood.slug),
   })
 
@@ -566,7 +567,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
                 اختر خدمتك
               </Link>
               <a
-                href="tel:+966123456789"
+                href={`tel:${siteConfig.phone}`}
                 className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition-all border-2 border-white/30"
               >
                 اتصل الآن
@@ -768,7 +769,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
                 <Phone className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">اتصل بنا</h3>
-              <p className="opacity-90">+966 12 234 5678</p>
+              <p className="opacity-90 ltr-numbers">{siteConfig.phone}</p>
             </div>
 
             <div className="text-center">
@@ -791,7 +792,7 @@ export default function NeighborhoodPage({ params }: NeighborhoodPageProps) {
           <div className="text-center mt-12">
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="tel:+966123456789"
+                href={`tel:${siteConfig.phone}`}
                 className="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
               >
                 اتصل الآن
